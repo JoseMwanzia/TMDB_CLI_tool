@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1763656884275" clover="3.2.0">
+  <project timestamp="1763656884275" name="All files">
+    <metrics statements="37" coveredstatements="35" conditionals="8" coveredconditionals="7" methods="12" coveredmethods="11" elements="57" coveredelements="53" complexity="0" loc="37" ncloc="37" packages="2" files="5" classes="5"/>
+    <package name="TMDB_CLI_tool">
+      <metrics statements="25" coveredstatements="23" conditionals="8" coveredconditionals="7" methods="5" coveredmethods="4"/>
+      <file name="index.ts" path="/Users/josephmwanzia/my-projects/nodeJS-projects/roadmap.sh/projects/TMDB_CLI_tool/index.ts">
+        <metrics statements="25" coveredstatements="23" conditionals="8" coveredconditionals="7" methods="5" coveredmethods="4"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="55" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="TMDB_CLI_tool.__test__.helpers">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+      <file name="mockCli.ts" path="/Users/josephmwanzia/my-projects/nodeJS-projects/roadmap.sh/projects/TMDB_CLI_tool/__test__/helpers/mockCli.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+      </file>
+      <file name="mockEnv.ts" path="/Users/josephmwanzia/my-projects/nodeJS-projects/roadmap.sh/projects/TMDB_CLI_tool/__test__/helpers/mockEnv.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="mockExit.ts" path="/Users/josephmwanzia/my-projects/nodeJS-projects/roadmap.sh/projects/TMDB_CLI_tool/__test__/helpers/mockExit.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+      </file>
+      <file name="mockFetch.ts" path="/Users/josephmwanzia/my-projects/nodeJS-projects/roadmap.sh/projects/TMDB_CLI_tool/__test__/helpers/mockFetch.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
