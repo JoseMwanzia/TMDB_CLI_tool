@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 require("dotenv/config");
 const { ACCESSS_TOKEN } = process.env;
 
-export function runCLI() {
+ export function runCLI() {
     if (process.argv[2] !== '--type') {
         console.error('Please provide a --type flag');
         process.exit(1);
@@ -35,7 +34,7 @@ async function showMovie(filteredMovie: string) {
     const url = `https://api.themoviedb.org/3/movie/${filteredMovie}?language=en-US&page=1`;
 
     const options = {
-        method: 'GT',
+        method: 'GET',
         headers: {
             accept: 'application/json',
             Authorization: `Bearer ${ACCESSS_TOKEN}`,
@@ -49,8 +48,4 @@ async function showMovie(filteredMovie: string) {
             return json
         })
         .catch(err => console.error(err));
-}
-
-if (require.main === module) {
-    runCLI();
 }
