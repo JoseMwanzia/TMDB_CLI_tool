@@ -23,16 +23,31 @@ This CLI tool is built with:
 ## 🛠 Project Structure
 ```bash 
 project/
-  |---bin/
+  |-__test__
+      |---helpers
+          |---mockCli.ts
+          |---mockEnv.ts
+          |---mockExit.ts
+          |---mockFetch.ts
+      |---index.test.ts
+  |-.github/workflows
+      |tests.yml
+  |-bin/
       |---tmdb_app           <-- Dev mode entry (ts-node wrapper)
-  |---dist/
-      |---index.js           <-- Compiled JS (for production)
-  |---.env
-  |---.gitignore
-  |---index.ts               <-- Main CLI logic
-  |---package.json
-  |---README.md 
-  |---tsconfig.json
+  |-dist/                    <-- Compiled JS (for production)
+      |---cli.js
+      |---cli.js.map
+      |---index.js
+      |---index.js.map
+  |-src
+      |---cli.ts
+      |---index.ts           <-- Main CLI logic
+  |.env
+  |-.gitignore
+  |-jest.config.js       
+  |-package.json
+  |-README.md 
+  |-tsconfig.json
 ```
 ## ⚙️ Installation
 Clone the project:
@@ -50,6 +65,7 @@ Create a .env file in the project root:
 ACCESSS_TOKEN=your_tmdb_api_token_here
 ```
 This value will automatically load because dotenv/config is required at runtime.
+You can get your ACCESS_TOKEN from this [TMDB API](https://developer.themoviedb.org/reference/movie-now-playing-list)
 
 ## 🔧 Development Mode (Instant Updates)
 Development mode uses a wrapper script that loads TypeScript directly through ts-node, meaning you do NOT need to run tsc every time you make changes.
@@ -174,17 +190,17 @@ chmod +x dist/index.js
 {
   "bin": {
     "tmdb-app": "bin/tmdb-app",
-    "tmdb-app": "dist/index.js"
+    "tmdb-app-prod": "dist/index.js"
   }
 }
 ```
-4. Re-link (optional):
+4. Re-link:
 ```
 npm link
 ```
 Then run:
 ```
-tmdb-app --type popular
+tmdb-app-prod --type popular
 ```
 
 ## 🤝 How to Contribute
@@ -205,8 +221,7 @@ Please ensure your code follows the existing coding style and structure.
 This project uses data provided by [TMDB](https://developer.themoviedb.org/reference/movie-now-playing-list)
 .
 This product uses the TMDB API but is not endorsed or certified by TMDB.
-Big thanks to TMDB for providing an amazing API for movie and TV  data,
-and also [.](https://roadmap.sh/projects/tmdb-cli)
+Big thanks to TMDB for providing an amazing API for movie and TV  data[.](https://roadmap.sh/projects/tmdb-cli)
 
 
 ## 🎉 Final Notes
