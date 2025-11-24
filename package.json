@@ -13,7 +13,8 @@
   "license": "ISC",
   "type": "commonjs",
   "bin": {
-    "tmdb-app": "bin/tmdb_app"
+    "tmdb-app-dev": "bin/tmdb_app",
+    "tmdb-app": "dist/index.js"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
