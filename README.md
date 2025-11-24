@@ -88,17 +88,17 @@ npm link
 Now you can run:
 
 ```
-tmdb-app --type popular
+tmdb-app-dev --type popular
 ```
 #### ✔ Instant updates
 Every change in ``./index.ts`` is reflected immediately.
 ### 🧪 Usage (Development)
 ```
-tmdb-app --type <category>
+tmdb-app-dev --type <category>
 ```
 Example:
 ```
- tmdb-app --type playing
+ tmdb-app-dev --type playing
  ```
 Output example:
 ```
@@ -128,7 +128,7 @@ upcoming	|upcoming
 ````
 Example
 ```
-tmdb-app --type top
+tmdb-app-dev --type top
 ```
 ### 🧩 CLI Logic Explanation
 Your TypeScript logic validates:
@@ -189,8 +189,8 @@ chmod +x dist/index.js
 ```
 {
   "bin": {
-    "tmdb-app": "bin/tmdb-app",
-    "tmdb-app-prod": "dist/index.js"
+    "tmdb-app-dev": "bin/tmdb-app",
+    "tmdb-app": "dist/index.js"
   }
 }
 ```
@@ -200,7 +200,7 @@ npm link
 ```
 Then run:
 ```
-tmdb-app-prod --type popular
+tmdb-app --type popular
 ```
 
 ## 🤝 How to Contribute
